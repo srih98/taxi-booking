@@ -19,3 +19,18 @@ spec:
           image: srihariadada1998/project2:v2.0.0
           ports:
             - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app1-nginx-loadbalancer-service123
+  labels:
+    app: app1-nginx
+spec:
+  type: LoadBalancer
+  selector:
+    app: app1-nginx
+  ports:
+    - port: 8080
+      targetPort: 8080
+                  
