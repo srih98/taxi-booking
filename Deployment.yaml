@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app1-nginx-deployment
+  name: app1-nginx-project
   labels:
     app: app1-nginx
 spec:
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app1-nginx-loadbalancer-service123456
+  name: app1-nginx-loadbalancer-service1234567
   labels:
     app: app1-nginx
 spec:
