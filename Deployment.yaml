@@ -23,7 +23,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: app1-nginx-loadbalancer-service123
+  name: app1-nginx-loadbalancer-service123456
   labels:
     app: app1-nginx
 spec:
